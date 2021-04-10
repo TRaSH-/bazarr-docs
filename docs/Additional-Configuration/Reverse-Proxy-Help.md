@@ -1,10 +1,5 @@
 # Reverse Proxy Help
 
-- [Using Nginx and /bazarr/ base url](#using-nginx-and-bazarr-base-url)
-- [Using Apache 2.3.12 or greater and /bazarr/ base url](#using-apache-2312-or-greater-and-bazarr-base-url)
-- [Using Authelia authentication](#using-authelia-authentication)
-- [Dockers](#dockers)
-
 ## Using Nginx and /bazarr/ base url
 
  ```php
@@ -26,7 +21,7 @@
  }
  ```
 
-### Using Apache 2.3.12 or greater and /bazarr/ base url
+## Using Apache 2.3.12 or greater and /bazarr/ base url
 
 > *Apache 2.3.12 or greater is required to support `AllowEncodedSlashes NoDecode` which is required for Sonarr/Radarr config testing.*
 
