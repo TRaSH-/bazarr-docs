@@ -1,9 +1,11 @@
+# Reverse Proxy Help
+
 - [Using Nginx and /bazarr/ base url](#using-nginx-and-bazarr-base-url)
 - [Using Apache 2.3.12 or greater and /bazarr/ base url](#using-apache-2312-or-greater-and-bazarr-base-url)
 - [Using Authelia authentication](#using-authelia-authentication)
 - [Dockers](#dockers)
 
-### Using Nginx and /bazarr/ base url
+## Using Nginx and /bazarr/ base url
 
  ```php
  location /bazarr/ {
@@ -17,7 +19,7 @@
     proxy_set_header        Connection              "Upgrade";
     proxy_redirect off;
     # Allow the Bazarr API through if you enable Auth on the block above
-    location /bazarr/api { 
+    location /bazarr/api {
         auth_request off;
         proxy_pass http://127.0.0.1:6767/bazarr/api;
     }
@@ -52,7 +54,7 @@
 
 > *Note: The default buffer_size is 4096, double that seems to fix any loading issues with Bazarr.*
 
-```
+```bash
 access_control:
   default_policy:
   rules:

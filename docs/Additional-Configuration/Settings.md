@@ -1,3 +1,5 @@
+# Settings
+
 - [General](#general)
 - [Sonarr](#sonarr)
 - [Radarr](#radarr)
@@ -7,13 +9,13 @@
 - [Notifications](#notifications)
 - [Scheduler](#scheduler)
 
-### General
+## General
 
-#### Host
+### Host
 
 ![image-20200723194801432](images/image-20200723194801432.png)
 
-##### Bind Address
+#### Bind Address
 
 Valid IP4 address or '0.0.0.0' for all interfaces
 
@@ -65,17 +67,17 @@ Enter here the hostname of your proxy.
 
 Enter here the TCP port of your proxy.
 
-##### Username
+##### Username-
 
 Enter here the username (if required) to authenticate to your proxy.
 
-##### Password
+##### Password-
 
 Enter here the password (if required) to authenticate to your proxy.
 
 ##### Ignored addresses
 
-Enter here (if required), a list of comma separated hostnames or IPv4 addresses to be excluded from going through the proxy.
+Enter here (if required), a list of comma separated hostname or IPv4 addresses to be excluded from going through the proxy.
 
 #### UI
 
@@ -99,7 +101,7 @@ Send anonymous usage information, nothing that can identify you. This includes i
 
 ### Sonarr
 
-#### Host
+#### Host-
 
 ![image-20200520223746802](images/image-20200520223746802.png)
 
@@ -109,11 +111,11 @@ Enter the hostname or the IP address of the computer running your Sonarr instanc
 
 > **Be aware that when using Bazarr in docker, you cannot reach another container on the same Docker host using the loopback address (ex.: 127.0.0.1 or localhost). Loopback address refer to the Bazarr Docker container, not the Docker host.**
 
-##### Port Number
+##### Port Number-
 
 Enter the TCP port of your Sonarr instance. Default is 8989.
 
-##### URL Base
+##### URL Base-
 
 Mainly used by those who expose Sonarr behind a reverse proxy (ex.: /sonarr). Don't forget the leading slash. In fact, it should look exactly the same as in Sonarr settings. Mainly used when you use a reverse proxy.
 
@@ -143,7 +145,7 @@ Select the minimal score (in percentage) required for a subtitles file to be dow
 
 Automatic download of Subtitles will only happen for monitored shows/episodes in Sonarr.
 
-##### Exluded Tags
+##### Excluded Tags
 
 Episodes from series with those tags (case sensitive) in Sonarr will be excluded from automatic download of Subtitles.
 In Sonarr you add a custom made tag to a show, in this case the shows with these tags will be ignored by Bazarr. examples: `dutch`, `anime`
@@ -172,21 +174,21 @@ Click on `Add` and you will get a popup window
 
 Ex.:
 
-* Browse or type the path for Sonarr: `/media/tv_shows/seriesX/`
-* Browse or type the path for Bazarr: `\\nas\tv\seriesX\
+- Browse or type the path for Sonarr: `/media/tv_shows/seriesX/`
+- Browse or type the path for Bazarr: `\\nas\tv\seriesX\
 
 The common part of both path can be discarded and you should use those values:
 
-* Path for Sonarr: `/media/tv_shows/`
-* Path for Bazarr: `\\nas\tv\`
+- Path for Sonarr: `/media/tv_shows/`
+- Path for Bazarr: `\\nas\tv\`
 
->  *If everything runs on Docker you normally don't need to use this. Except if you have messed up path mappings and then it would be smarter to fix those first to have consistency and well planned paths.*
+> *If everything runs on Docker you normally don't need to use this. Except if you have messed up path mappings and then it would be smarter to fix those first to have consistency and well planned paths.*
 
 ------
 
 ### Radarr
 
-The same setup as you did for Sonarr except for the default Port Numbert: 7878
+The same setup as you did for Sonarr except for the default Port Number: 7878
 
 ------
 
@@ -279,7 +281,7 @@ Only synchronize the subtitles if the score is below your chosen score.
 
   ![image-20200723213106103](images/image-20200723213106103.png)
 
-##### Use Custom Post-Processing
+##### Use Custom Post-Processing-
 
 Enable the post-processing execution after downloading a subtitles.
 
@@ -295,7 +297,7 @@ Only runs Post-processing  if the score is below your chosen score.
 
 Enter in this field the script or binary path to execute with the desired arguments. Please be aware that double-quote could be necessary around arguments.
 
-**Be aware that your command cannot start or end with quote/double-quote. You must append something like ` 2>&1` to the end of your command.**
+**Be aware that your command cannot start or end with quote/double-quote. You must append something like `2>&1` to the end of your command.**
 
 ------
 
@@ -323,7 +325,7 @@ Select the languages you want to be able to use in Bazarr. This doesn't add any 
 
 Enable the automatic selection of desired languages for new series added **after** the activation of this option.
 
-###### Languages
+###### Languages-
 
  Select the languages to be added to required languages for new series.
 

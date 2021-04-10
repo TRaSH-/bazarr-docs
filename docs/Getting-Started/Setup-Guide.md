@@ -1,15 +1,17 @@
-After installation and starting up, you open a browser and go to http://ip_where_installed:6767
+# Setup Guide
+
+After installation and starting up, you open a browser and go to <http://ip_where_installed:6767>
 Before it works you need to add info for Sonarr and/or Radarr.
 
-### Sonarr
+## Sonarr
 
 `Settings` => `Sonarr`
 
-#### Host
+### Host
 
 ![image-20200520223746802](images/image-20200520223746802.png)
 
-##### Hostname or IP address
+#### Hostname or IP address
 
 Enter the hostname or the IP address of the computer running your Sonarr instance.
 
@@ -48,7 +50,7 @@ Select the minimum score (in percentage) required for a subtitles file to be dow
 
 Automatic download of Subtitles will only happen for monitored shows/episodes in Sonarr.
 
-##### Exluded Tags
+##### Excluded Tags
 
 Episodes from series with those tags (case sensitive) in Sonarr will be excluded from automatic download of Subtitles.
 In Sonarr you add a custom tag to a show, in this case the shows with these tags will be ignored by Bazarr. examples: `dutch`, `anime`
@@ -66,7 +68,7 @@ You should only use this section if Sonarr and Bazarr use a different path to ac
 (for example if you run Sonarr on a different device then Bazarr or have a Synology and mix packages with Docker.)
 
 > ![animated-exclamation-mark-image-0006](images/animated-exclamation-mark-image-0006.gif)
-> 
+>
 > **IF YOU GOT THE SAME VALUES ON BOTH SIDES THEN YOU DON'T NEED IT !!!**
 > **IT SHOULD ALSO BE REMOVED OR ELSE YOU WILL GET A ERROR.**
 >
@@ -121,7 +123,7 @@ Select the languages you want to be able to use in Bazarr. This doesn't add any 
 
 Enable the automatic selection of desired languages for new series added **after** the activation of this option.
 
-###### Languages
+###### Languages-
 
 Select the languages to be added to required languages for new series.
 
@@ -133,14 +135,16 @@ Enable this to require hearing-impaired subtitles instead of standard ones.
 
 Forced subtitle is the subtitle appearing on screen when the characters speak a foreign or alien language, or there is a sign, location, or other text in a scene.
 
-- Like Dothraki in Game of Thrones.
-- Star Trek when someone speaks Klingon.
+* Like Dothraki in Game of Thrones.
+
+* Star Trek when someone speaks Klingon.
 
  Values:
 
-- False: Search for normal subtitles.
-- True: Search for only forced subtitles. (keep in mind that forced subs aren't available in every languages and are hard to find).
-- Both: Search for normal subtitles and for forced subtitles.
+* False: Search for normal subtitles.
+* True: Search for only forced subtitles. (keep in mind that forced subs aren't available in every languages and are hard to find).
+
+* Both: Search for normal subtitles and for forced subtitles.
 
 ##### Movies Default Setting
 
