@@ -3,15 +3,15 @@
 After installation and starting up, you open a browser and go to <http://ip_where_installed:6767>
 Before it works you need to add info for Sonarr and/or Radarr.
 
-### Sonarr
+## Sonarr
 
 `Settings` => `Sonarr`
 
-#### Host
+### Host
 
 ![image-20200520223746802](images/image-20200520223746802.png)
 
-##### Hostname or IP address
+#### Hostname or IP address
 
 Enter the hostname or the IP address of the computer running your Sonarr instance.
 
