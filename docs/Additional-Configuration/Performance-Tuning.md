@@ -3,7 +3,7 @@
 We gathered some info from people that use Bazarr on a low powered device like a RaspberryPi or when you have your media stored in the cloud.
 And when you got allot of missing Subtitles.
 
-### Disable periodic scan for existing Subtitles
+## Disable periodic scan for existing Subtitles
 
 ![something](images/image-20200724170813991.png)
 `Settings` => `Scheduler` => `Disk Indexing`
