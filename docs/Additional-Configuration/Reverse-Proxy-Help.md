@@ -5,7 +5,7 @@
 - [Using Authelia authentication](#using-authelia-authentication)
 - [Dockers](#dockers)
 
-### Using Nginx and /bazarr/ base url
+## Using Nginx and /bazarr/ base url
 
  ```php
  location /bazarr/ {
