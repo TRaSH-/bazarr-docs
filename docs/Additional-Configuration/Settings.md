@@ -9,13 +9,13 @@
 - [Notifications](#notifications)
 - [Scheduler](#scheduler)
 
-### General
+## General
 
-#### Host
+### Host
 
 ![image-20200723194801432](images/image-20200723194801432.png)
 
-##### Bind Address
+#### Bind Address
 
 Valid IP4 address or '0.0.0.0' for all interfaces
 
