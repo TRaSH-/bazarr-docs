@@ -81,8 +81,8 @@ Then double click on the created image.
 ![!create container](images/create-container.png)
 
 1. Give the  container a friendly name (e.g. `bazarr`).
-2. Enable this (not sure if it's needed but you can test that later yourself)
-3. Then select `Advanced Setttings`
+1. Enable this (not sure if it's needed but you can test that later yourself)
+1. Then select `Advanced Setttings`
 
 ##### Advanced Settings
 
